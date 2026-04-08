@@ -1,0 +1,381 @@
+/* Colour palettes */
+@media (prefers-color-scheme: dark) {
+
+    /* Dark mode */
+    :root {
+        --bg0: #20282F;
+        --bg1: #34404B;
+        --bg1t: #34404Bbb;
+        --tx0: #FFFFFF;
+        --tx1: #AFB4B9;
+        --ac0: #FFB200;
+        --lk0: #B6B9FE;
+        --lk1: #888BFF;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    /* Light mode */
+    :root {
+        --bg0: #FFFFFF;
+        --bg1: #AFB4B9;
+        --bg1t: #AFB4B9bb;
+        --tx0: #000000;
+        --tx1: #43474B;
+        --ac0: #FFB200;
+        --lk0: #111333;
+        --lk1: #444677;
+    }
+}
+
+/* Global styles */
+
+:root {
+    --bounce0: cubic-bezier(.78, .28, .34, 1.44);
+}
+
+::selection {
+    color: #000;
+    background: var(--ac0);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg0);
+    color: var(--tx0);
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: auto;
+    scrollbar-color: var(--ac0) var(--bg1);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--tx1);
+    margin: 20px 40px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 8px;
+    margin-left: 0;
+    padding: 0;
+}
+
+h4,
+h5,
+h6 {
+    margin: 4px;
+    margin-left: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.1em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--lk0);
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--lk0);
+}
+
+h6 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--lk1);
+}
+
+blockquote {
+    border-left: 4px solid var(--tx1);
+    padding-left: 20px;
+    margin-left: 0;
+    color: var(--tx0);
+    font-style: italic;
+    transition: 0.3s ease-in-out;
+}
+
+blockquote:active {
+    border-left: 4px solid var(--ac0);
+    color: var(--lk0);
+}
+
+a {
+    color: var(--lk0);
+    text-decoration: none;
+    transition: 0.2s var(--bounce0);
+}
+
+a:visited {
+    color: var(--lk1);
+}
+
+a:active {
+    color: var(--ac0);
+    text-decoration: underline;
+    text-decoration-color: var(--ac0);
+}
+
+mark {
+    background-color: var(--ac0);
+    color: black;
+    padding: 0px 2px;
+}
+
+code {
+    background: var(--bg1);
+    color: var(--tx0);
+    padding: 2px 4px;
+    border-radius: 6px;
+    border: 1px solid var(--bg1);
+}
+
+small {
+    color: var(--tx1);
+    font-size: 0.77em;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: 2px dotted var(--lk0);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+abbr:active {
+    border-bottom: 2px solid var(--lk1);
+    color: var(--lk1);
+}
+
+/* Page styles */
+
+/* Header */
+div#header {
+    color: #000;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    position: static;
+    clip-path: shape(from 0% 0%,
+            vline to 90%,
+            curve to 25% 90% with 12.5% 110%,
+            curve to 50% 90% with 37.5% 70%,
+            curve to 75% 90% with 62.5% 110%,
+            curve to 100% 90% with 87.5% 70%,
+            vline to 0%,
+            hline to 0%,
+            close);
+    position: fixed;
+    z-index: 255;
+    filter: drop-shadow(0 0 20px #00000088);
+}
+
+div#top {
+    background: var(--ac0);
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: static;
+
+}
+
+#logo {
+    height: 100%;
+}
+
+/* Socials */
+
+ul#social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0;
+    padding: 0px 50px;
+    float: right;
+    height: 100%;
+    vertical-align: middle;
+}
+
+ul#social>li {
+    display: flex;
+    align-items: center;
+    transition: 0.2s var(--bounce0);
+}
+
+ul#social>li>a {
+    color: #000;
+    transition: inherit;
+}
+
+ul#social>li>a>img {
+    width: 36px;
+    transform: scale(1);
+    transition: inherit;
+}
+
+/* Navigation */
+
+ul#nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: var(--ac0);
+    margin: 0;
+    padding-top: 0;
+    height: 30%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+ul#nav>li {
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    transition: 0.2s var(--bounce0);
+}
+
+ul#nav>li>a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    gap: 10px;
+    transition: inherit;
+}
+
+ul#nav>li>a>img {
+    width: 24px;
+    transition: inherit;
+}
+
+/* Content */
+
+#main {
+    padding: 10vw;
+    padding-top: 17vh;
+}
+
+.content-block {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.content-img {
+    height: 100%;
+    width: 30vw;
+    margin: 5px 0;
+}
+
+.content-img.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.content-img.right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* What's new */
+#whats-new {
+    height: 500px;
+    position: relative;
+    border-radius: 24px;
+}
+
+#whats-new>img {
+    height: 100%;
+    /* width > 100 - #whats-new-content linear-gradient / width */
+    width: 80%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+#whats-new-content {
+    background: linear-gradient(to right, var(--bg1t) 0%, var(--bg1) 50%);
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 24px;
+    clip-path: shape(from 100% 0%,
+            hline to 5%,
+            curve to 5% 50% with 15% 25%,
+            curve to 5% 100% with -5% 75%,
+            hline to 100%,
+            vline to 0%,
+            close);
+    padding-left: 7vw;
+    padding-right: 40px;
+}
+
+/* Hover devices */
+@media only screen and (hover: hover) and (pointer: fine) {
+    a:hover {
+        color: var(--ac0);
+        text-decoration: underline;
+        text-decoration-color: var(--ac0);
+    }
+
+    ul#social>li:hover>a>img {
+        filter: drop-shadow(0 0 2px #00000088);
+        transform: scale(1.2);
+    }
+
+    ul#nav>li:hover>a {
+        color: initial;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    ul#nav>li:hover {
+        border-bottom: 5px solid var(--bg0);
+    }
+
+    abbr:hover {
+        border-bottom: 2px solid var(--lk1);
+        color: var(--lk1);
+    }
+
+    blockquote:hover {
+        border-left: 4px solid var(--ac0);
+        color: var(--lk0);
+    }
+}
+
+/* Mobile devices and small screens */
+@media (max-width: 768px) {}
