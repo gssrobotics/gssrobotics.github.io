@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/svg/robotics.svg">
     <title>Bear Necessities | GSS Robotics</title>
 </head>
 
 <body>
+    <!-- {% include header.html %} -->
     <header>
-        <a href="index.html" class="logo-link">
+        <a href="index.html" class="logo-link visible">
             <img src="img/svg/robotics.svg" alt="GSS Robotics Logo" class="logo-img">
             <div class="logo-text">
                 <span class="title">Bear Necessities</span>
@@ -40,8 +42,30 @@
                     </svg>
                     Contact
                 </a></li>
+            <li class="mobile-hamburger" onclick="toggleMobileMenu();">
+                <svg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <rect width="8" height="2" rx="1" fill="currentColor" />
+                    <rect y="3" width="8" height="2" rx="1" fill="currentColor" />
+                    <rect y="6" width="8" height="2" rx="1" fill="currentColor" />
+                </svg>
+            </li>
         </ul>
     </header>
+    <div class="large-content-block top" style="background: var(--ab0);">
+        <div class="home-container">
+            <div>
+                <h1 class="coiny">About Us</h1>
+                <p>Well, either you've made a typo, or our developers are too lazy to fix bugs like these. So tell them to
+                    lock in by contacting [inset contact info later].</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 GSS Robotics. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:gss.robotics@gmail.com">gss.robotics@gmail.com</a></p>
+        </div>
+    </footer>
     <script src="script.js" defer></script>
 </body>
 
