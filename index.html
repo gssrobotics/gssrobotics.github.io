@@ -7,42 +7,229 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="assets/graphics/robotics.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
     <title>Bear Necessities | GSS Robotics</title>
 </head>
 
 <body>
     <header>
-        <div id="logo-title">
-            <img src="assets/graphics/robotics.svg" alt="GSS Robotics Logo">
-            <div id="title">
+        <a href="index.html" id="title">
+            <img id="logo" src="assets/graphics/robotics.svg">
+            <div id="title-text">
+                <h1>GSS Robotics</h1>
+            </div>
+        </a>
+        <nav>
+            <a class="nav-link active" href="index.html">
+                Home
+            </a>
+            <a class="nav-link">
+                About Us
+            </a>
+            <a class="nav-link">
+                Robots
+            </a>
+            <a class="nav-link">
+                Contact
+            </a>
+            <a class="nav-action">
+                <button class="nav-action primary">
+                    Join Us
+                </button>
+            </a>
+            <a class="nav-action">
+                <button class="nav-action secondary">
+                    Sponsor
+                </button>
+            </a>
+        <nav>
+    </header>
+    <div id="hero">
+        <div id="hero-content">
+            <div id="hero-title">
+                <h2>Garibaldi Secondary</h2>
                 <h1>Bear Necessities</h1>
-                <h2>GSS Robotics <i>#27330</i></h2>
+                <h3>FTC #27330</h3>
+            </div>
+            <p>
+                Join 5+ nerdy teenagers who make barely functioning robots in the area’s worst FTC robotics team.
+            </p>
+            <div class="action-buttons">
+                <button class="primary" onClick="goTo('Join');">
+                    Join Us
+                </button>
+                <button class="secondary" onClick="goTo('Support');">
+                    Sponsor
+                </button>
             </div>
         </div>
-        <ul id="nav">
-            <li><a href="index.html">
-                <img>
-                Home
-            </a></li>
-            <li><a href="about.html">
-                <img>
-                About
-            </a></li>
-            <li><a href="projects.html">
-                <img>
-                Projects
-            </a></li>
-            <li><a href="contact.html">
-                <img>
-                Contact
-            </a></li>
-        </ul>
-    </header>
+        <img src="assets/pictures/2026/peashooter.webp" id="hero-image">
+    </div>
     <main>
+        <div class="content-block row">
+            <div class="content">
+                <h1>Our Mission</h1>
+                <p>
+                    Hello, we are the FTC Robotics team of Garibaldi Secondary School, and our mission is to empower every student to explore and understand the real-world applications of technology in an inclusive and supportive environment.
+                </p>
+            </div>
+            <div class="content">
+                <img src="assets/pictures/2026/group-photo.webp" alt="">
+            </div>
+        </div>
 
+        <div class="content-block row">
+            <div class="content">
+                <img src="assets/pictures/FTCLogo.webp" alt="FIRST Tech Challenge Logo" style="box-shadow: none; padding: 8px 64px 0;">
+            </div>
+            <div class="content">
+                <h1>About FTC</h1>
+                <p>
+                    The <a class="external", href="https://www.firstinspires.org/programs/ftc/">FIRST Tech Challenge</a>, or FTC, is a robotics competiton held by FIRST. Teams of students in grades 7-12 build and program a robot to compete in a new challenge announced every year in September.
+                </p>
+                <p>
+                    The FIRST Tech Challenge allows students to learn about STEM concepts and develop an interest in robotics and technology, while learning teamwork, creativity, and problem solving.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-block column">
+            <h1>Our Values</h1>
+
+            <div class="card-container">
+                <div class="card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="128" viewBox="642 1567 109 128">
+                      <path fill="currentColor" d="M644.153 1666.955h26.175a2.16 2.16 0 0 0 1.592-.691l7.59-8.225h.006a2.16 2.16 0 0 0-.325-2.82 2.15 2.15 0 0 0-2.837-.056l-6.957 7.477h-22.963a22.2 22.2 0 0 1 7.944-14.977 22.1 22.1 0 0 1 16.185-4.978 22.1 22.1 0 0 1 14.963 7.933 13 13 0 0 0-2.052 6.988 13.07 13.07 0 0 0 4.754 10.068 26.5 26.5 0 0 0-13.18 9.629 26.6 26.6 0 0 0-5.051 15.54c0 1.19.964 2.157 2.152 2.157h26.18a2.17 2.17 0 0 0 1.593-.72l7.59-8.196a2.156 2.156 0 0 0-.324-2.82 2.14 2.14 0 0 0-2.832-.056l-6.963 7.477h-22.962a22.21 22.21 0 0 1 12.288-17.561 22.13 22.13 0 0 1 21.377 1.044 22.21 22.21 0 0 1 10.528 18.674c0 1.191.965 2.158 2.153 2.158a2.156 2.156 0 0 0 2.153-2.158 26.6 26.6 0 0 0-5.04-15.54 26.5 26.5 0 0 0-13.158-9.646c5.113-4.168 6.274-11.539 2.68-17.084a.7.7 0 0 1 .118-.112 22.1 22.1 0 0 1 15.714-7.933 22.1 22.1 0 0 1 16.527 6.045 22.2 22.2 0 0 1 6.924 16.209 2.152 2.152 0 1 0 4.305 0 26.6 26.6 0 0 0-5.074-15.54 26.5 26.5 0 0 0-13.196-9.612 13.027 13.027 0 0 0-3.773-22.292 5.7 5.7 0 0 1 3.874-1.55h1.435a2.155 2.155 0 0 0 2.152-2.158v-13.163a2.156 2.156 0 0 0-2.152-2.157h-1.435a6.2 6.2 0 0 1-5.612-4.096 6.165 6.165 0 0 1 1.12-6.792l1.004-1.005a2.18 2.18 0 0 0 0-3.051l-9.272-9.292v.006a2.16 2.16 0 0 0-3.044 0l-.735.736.006-.006a6.415 6.415 0 0 1-7.047 1.438l-.46-.185a5.875 5.875 0 0 1-3.616-5.466v-1.439a2.156 2.156 0 0 0-2.152-2.157h-13.119a2.156 2.156 0 0 0-2.152 2.157v1.439a5.89 5.89 0 0 1-3.616 5.437l-.819.343a5.84 5.84 0 0 1-6.413-1.28l-1.004-1.006a2.224 2.224 0 0 0-3.044 0l-9.272 9.292a2.18 2.18 0 0 0 0 3.05l1.003 1.006a6.15 6.15 0 0 1 1.121 6.786v.13a6.13 6.13 0 0 1-5.555 3.971h-1.435a2.156 2.156 0 0 0-2.153 2.158v13.112c0 1.191.964 2.157 2.153 2.157h1.435a5.75 5.75 0 0 1 3.89 1.556 13.029 13.029 0 0 0-3.846 22.32 26.53 26.53 0 0 0-13.157 9.63 26.6 26.6 0 0 0-5.04 15.522c-.005.579.219 1.13.622 1.54.404.404.96.634 1.53.634zm52.31-.634a8.71 8.71 0 0 1-8.05-5.388 8.75 8.75 0 0 1 1.89-9.51 8.69 8.69 0 0 1 9.496-1.894 8.73 8.73 0 0 1 5.376 8.062c-.005 4.82-3.902 8.724-8.712 8.73m36.709-36.759a8.73 8.73 0 0 1-5.376 8.068 8.7 8.7 0 0 1-9.491-1.894 8.74 8.74 0 0 1-1.89-9.516 8.71 8.71 0 0 1 8.05-5.388c4.805.006 8.701 3.91 8.707 8.73m-72.34-18.09v-8.876a10.56 10.56 0 0 0 8.851-6.719 10.51 10.51 0 0 0-1.547-10.899l6.256-6.286a10.14 10.14 0 0 0 10.59 1.657l.819-.343V1580a10.16 10.16 0 0 0 6.256-8.63h8.841a10.16 10.16 0 0 0 6.257 8.63l.46.185v.006a10.72 10.72 0 0 0 10.909-1.573l6.268 6.36a10.46 10.46 0 0 0-1.565 10.898v.163a10.5 10.5 0 0 0 8.813 6.612v8.877a10.3 10.3 0 0 0-7.994 5.033 13.01 13.01 0 0 0-11.874 8.815 13.05 13.05 0 0 0 4.025 14.253 26.4 26.4 0 0 0-11.683 7.763 12.906 12.906 0 0 0-16.1 0 26.33 26.33 0 0 0-11.667-7.763 13.05 13.05 0 0 0 3.941-14.236 13.02 13.02 0 0 0-11.868-8.775 10.3 10.3 0 0 0-7.989-5.146m-1.076 18.09a8.73 8.73 0 0 1 5.376-8.068 8.7 8.7 0 0 1 9.491 1.893 8.74 8.74 0 0 1 1.89 9.517 8.71 8.71 0 0 1-8.051 5.388c-4.81 0-8.706-3.91-8.706-8.73m75.76 28.46-7.59 8.224v.006a2.18 2.18 0 0 1-1.598.685h-8.336a2.15 2.15 0 0 1-2.153-2.157c0-1.191.964-2.157 2.153-2.157h7.378l6.973-7.534a2.14 2.14 0 0 1 2.832.056c.801.725.936 1.933.325 2.82zm-39.053-30.01a20.92 20.92 0 0 0 14.805-6.146 21 21 0 0 0 6.134-14.842 21 21 0 0 0-6.134-14.837 20.92 20.92 0 0 0-14.805-6.146 20.92 20.92 0 0 0-14.805 6.146 21 21 0 0 0-6.133 14.837 21.02 21.02 0 0 0 6.139 14.83 20.98 20.98 0 0 0 14.8 6.157m0-37.651v-.006a16.63 16.63 0 0 1 15.366 10.292 16.69 16.69 0 0 1-3.605 18.163 16.61 16.61 0 0 1-18.125 3.618 16.67 16.67 0 0 1-10.27-15.404c.006-9.203 7.45-16.657 16.634-16.67z"/>
+                    </svg>
+                    <h3>Teamwork</h3>
+
+                    <ul>
+                        <li>
+                            Practice leadership and organization in a primarily student-led environment
+                        </li>
+                        <li>
+                            Learn to communicate effectively and develop ideas
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="865 1563 128 128">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M940.63 1659.92a1.94 1.94 0 1 1 0-3.87h30a1.94 1.94 0 1 1 0 3.87Zm27.24-80.15-39.8-12.87h-.3l-39.8 12.87 39.8 12.87h.3zm-13.18 8.33v21.62c0 2.37-3.38 4.2-8.85 5.23-9.96 1.9-25.87 1.9-35.83 0-5.47-1.03-8.86-2.86-8.86-5.23v-21.62l-14.83-4.8a3.65 3.65 0 0 1 0-7.05l40.26-13.03q1.33-.45 2.67 0l40.26 13.03c2.98.96 3.62 4.5 1.35 6.33v15.77a5.5 5.5 0 0 1 3.52 5.1v3.52c0 1.08-.86 1.94-1.93 1.94h-7.05a1.94 1.94 0 0 1-1.93-1.94v-3.52c0-2.3 1.43-4.3 3.52-5.1v-14.24Zm-49.67 1.25 21.56 6.97q1.33.45 2.67 0l21.56-6.97v20.38c0 .23-2.18.76-5.7 1.43-9.43 1.79-24.96 1.79-34.4 0-3.51-.67-5.69-1.2-5.69-1.43h-.01Zm65.03 12.98c-1.01-1.01-2.7-.26-2.7 1.12v1.58h3.16v-1.58q-.01-.67-.46-1.12m14.15 24.81v-2.89c0-1-.79-1.86-1.8-1.93-4.52-.33-8.58-.42-12.63-.5-7.89-.17-15.77-.34-28.15-2.5-5.28-.92-10.24 3.61-12.62 8.42-2.39-4.81-7.35-9.34-12.62-8.42-12.38 2.16-20.26 2.33-28.15 2.5-4.06.08-8.11.17-12.62.5-1.02.07-1.8.92-1.8 1.93v2.9h-6.87c-1.08 0-1.94.86-1.94 1.93v59.98c0 1.08.87 1.94 1.94 1.94h124.12c1.08 0 1.94-.87 1.94-1.94v-59.98c0-1.08-.87-1.94-1.94-1.94Zm-110.4 3.88v51.3c0 1.14.97 2.05 2.19 1.92 4.54-.33 8.43-.42 12.32-.5 8.06-.16 16.13-.34 28.72-2.53 3.65-.64 7.53 2.38 9.24 5.9h-57.39v-56.09Zm57.93 56.1h57.4l-.01-56.1h-4.92v51.3c0 1.14-.97 2.05-2.19 1.92-4.54-.33-8.43-.42-12.32-.5-8.06-.16-16.13-.34-28.72-2.53-3.65-.63-7.53 2.38-9.24 5.9m-4.66-5.58c-2.83-3-6.9-4.8-10.7-4.15-12.37 2.16-20.26 2.32-28.14 2.5-3.43.06-6.85.13-10.55.35v-54.18c3.83-.23 7.23-.3 10.63-.38 8.06-.16 16.13-.34 28.72-2.53 2.07-.37 4.38.95 6.15 2.87 2.32 2.5 3.88 6.1 3.88 9.76Zm42.62-55.86c-8.06-.16-16.13-.34-28.72-2.53-2.07-.37-4.38.95-6.15 2.87a14.7 14.7 0 0 0-3.88 9.76v45.76c2.83-3 6.9-4.8 10.69-4.14 12.37 2.15 20.26 2.32 28.14 2.49 3.43.07 6.85.14 10.55.36v-54.19c-3.83-.23-7.23-.3-10.62-.38Zm-82.32 12.57a1.94 1.94 0 1 1 0-3.87h30a1.94 1.94 0 1 1 0 3.87Zm0 10.83a1.94 1.94 0 1 1 0-3.87h30a1.94 1.94 0 1 1 0 3.87Zm0 21.68a1.94 1.94 0 1 1 0-3.88h30a1.94 1.94 0 1 1 0 3.88Zm0-10.84a1.94 1.94 0 1 1 0-3.87h30a1.94 1.94 0 1 1 0 3.87Zm53.27-21.67a1.94 1.94 0 1 1 0-3.87h29.99a1.94 1.94 0 1 1 0 3.87Zm0 10.83a1.94 1.94 0 1 1 0-3.87h29.99a1.94 1.94 0 1 1 0 3.87Zm0 21.68a1.94 1.94 0 1 1 0-3.88h29.99a1.94 1.94 0 1 1 0 3.88Z" />
+                    </svg>
+                    <h3>Education</h3>
+
+                    <ul>
+                        <li>
+                            Learn about physics, engineering, computer science, and more
+                        </li>
+                        <li>
+                            Understand real-world problem solving and applications of technology
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="106.8" height="128" viewBox="1202 1544 106.8 128">
+                        <g fill="currentColor">
+                            <path
+                                d="M1255.13 1556.8c1.18 0 2.14-.95 2.14-2.13v-8.54a2.13 2.13 0 1 0-4.27 0v8.54c0 1.18.95 2.13 2.13 2.13M1290.66 1559.63l-6.04 6.03a2.14 2.14 0 0 0 3.02 3.02l6.03-6.04a2.14 2.14 0 0 0-3.01-3.01M1223.66 1626.62l-6.04 6.04a2.14 2.14 0 0 0 3.02 3.01l6.04-6.03a2.14 2.14 0 0 0-3.02-3.02M1306.67 1596h-8.54a2.13 2.13 0 1 0 0 4.27h8.54a2.13 2.13 0 1 0 0-4.27M1212.67 1596h-8.54a2.13 2.13 0 1 0 0 4.27h8.54a2.13 2.13 0 1 0 0-4.27M1287.64 1626.62a2.14 2.14 0 0 0-3.02 3.02l6.04 6.03a2.1 2.1 0 0 0 3.01 0c.84-.83.84-2.18 0-3.01ZM1223.66 1568.67a2.1 2.1 0 0 0 3.02 0c.83-.83.83-2.18 0-3.01l-6.04-6.04a2.14 2.14 0 0 0-3.02 3.02Z" />
+                            <path
+                                d="M1291.54 1597.26q0-1.66-.18-3.55a2.1 2.1 0 0 0-2.32-1.92 2.13 2.13 0 0 0-1.92 2.32q.16 1.69.16 3.15c0 7.17-2.33 13.95-6.74 19.61-6.76 8.64-10.33 18.54-10.33 28.62v2.97c0 1.18-.96 2.13-2.13 2.13h-2.14v-42.66l-.01-.08a2 2 0 0 0-.13-.68l-5.65-15.06a5.2 5.2 0 0 0-4.87-3.38 5.2 5.2 0 0 0-4.88 3.38l-5.65 15.06q-.12.33-.12.68l-.02.08v42.66h-2.13a2.13 2.13 0 0 1-2.14-2.13v-2.3c0-10.77-3.48-20.94-9.81-28.65a31.9 31.9 0 0 1-7.22-22c.86-16.18 14.22-29.45 30.42-30.21a31.9 31.9 0 0 1 27.89 13.78 2.13 2.13 0 1 0 3.5-2.42 36.1 36.1 0 0 0-31.59-15.62c-18.36.86-33.5 15.9-34.48 34.26a36 36 0 0 0 8.19 24.93c5.7 6.93 8.84 16.14 8.84 25.92v2.3c0 2.79 1.79 5.13 4.26 6.01v8.93c0 4.7 3.83 8.54 8.54 8.54h12.8c4.7 0 8.53-3.83 8.53-8.54v-8.93a6.4 6.4 0 0 0 4.27-6v-2.97c0-9.12 3.25-18.11 9.42-26 5-6.41 7.64-14.1 7.64-22.23m-34.13 12.8h4.27v40.53h-4.27Zm-3.02-16.45c.28-.74 1.5-.74 1.77 0l4.57 12.18h-10.91Zm-5.51 16.45h4.26v40.53h-4.26Zm-2.14 44.8h19.2v4.27h-21.33v-4.27Zm14.94 12.8h-12.8a4.27 4.27 0 0 1-4.27-4.27h21.33a4.27 4.27 0 0 1-4.26 4.27" />
+                            <path d="M1289.27 1586.13c0 2.84-4.27 2.84-4.27 0s4.27-2.84 4.27 0" />
+                        </g>
+                    </svg>
+                    <h3>Creativity</h3>
+
+                    <ul>
+                        <li>
+                            Practice problem-solving, critical thinking, and resource management
+                        </li>
+                        <li>
+                            Design promotional materials to recruit members or get sponsors
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-block row" id="Join">
+            <div class="content">
+                <h1>Join Us!</h1>
+                <p>
+                    Are you interested in mechanical engineering, designing, or just want to have fun? Join us to learn about robotics, participate in competitions, and have fun! All grades are welcome, no previous experience required.
+                </p>
+                <div class="action-buttons">
+                    <button class="primary">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/pictures/2026/group-photo.webp">
+            </div>
+        </div>
+
+        <div class="content-block row" id="Support">
+            <div class="content">
+                <img src="assets/pictures/2026/group-photo.webp">
+            </div>
+            <div class="content">
+                <h1>Support Us!</h1>
+                <p>
+                    We are a small team of 5 with limited resources and funding, and we rely on the community to donate to us or sponsor us. Your contribution means a lot to us, and lets us attend more competitions and build more advanced robots. Click the links below to learn more!
+                </p>
+                <div class="action-buttons">
+                    <button class="primary">
+                        Sponsor
+                    </button>
+                    <button class="secondary">
+                        Donate 
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-
+        <div id="footer-copyright">
+            <span>© 2026 GSS Robotics. All rights reserved.</span>
+            <a href="attribution.html">Attribution for Creative Commons</a>
+        </div>
+        <div id="footer-contact">
+            <a href="mailto:gss.robots@gmail.com">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M28 6C30.2091 6 32 7.79086 32 10V22C32 24.2091 30.2091 26 28 26H4C1.9287 26 0.22601 24.4256 0.0214844 22.4082L0 22V10C0 7.79086 1.79086 6 4 6H28ZM16.582 18.8145C16.2343 19.0628 15.7657 19.0628 15.418 18.8145L13.1973 17.2285L3.74609 23.9824C3.82931 23.993 3.91392 24 4 24H28C28.0854 24 28.1694 23.9928 28.252 23.9824L18.7988 17.2285L16.582 18.8145ZM2.12109 9.31641C2.04344 9.5298 2 9.75976 2 10V22C2 22.2396 2.04384 22.4687 2.12109 22.6816L11.4766 15.998L2.12109 9.31641ZM20.5215 16L29.877 22.6816C29.9544 22.4686 30 22.2398 30 22V10C30 9.75952 29.9548 9.52998 29.877 9.31641L20.5215 16ZM4 8C3.914 8 3.82923 8.00509 3.74609 8.01562L16 16.7695L28.252 8.01562C28.1694 8.00525 28.0853 8 28 8H4Z"
+                        fill="currentColor" />
+                </svg>
+                gss.robots@gmail.com
+            </a>
+            <a href="https://github.com/gssrobotics/">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 0C7.16 0 0 7.3411 0 16.4047C0 23.6638 4.58 29.795 10.94 31.9687C11.74 32.1122 12.04 31.6201 12.04 31.1894C12.04 30.7998 12.02 29.508 12.02 28.1341C8 28.8928 6.96 27.1293 6.64 26.2065C6.46 25.7349 5.68 24.279 5 23.8893C4.44 23.5818 3.64 22.823 4.98 22.8025C6.24 22.782 7.14 23.9919 7.44 24.484C8.88 26.9652 11.18 26.268 12.1 25.8374C12.24 24.7711 12.66 24.0534 13.12 23.6433C9.56 23.2332 5.84 21.8183 5.84 15.5435C5.84 13.7594 6.46 12.283 7.48 11.1347C7.32 10.7246 6.76 9.04309 7.64 6.78745C7.64 6.78745 8.98 6.35682 12.04 8.46893C13.32 8.09982 14.68 7.91527 16.04 7.91527C17.4 7.91527 18.76 8.09982 20.04 8.46893C23.1 6.33632 24.44 6.78745 24.44 6.78745C25.32 9.04309 24.76 10.7246 24.6 11.1347C25.62 12.283 26.24 13.7389 26.24 15.5435C26.24 21.8388 22.5 23.2332 18.94 23.6433C19.52 24.1559 20.02 25.1402 20.02 26.6781C20.02 28.8723 20 30.6358 20 31.1894C20 31.6201 20.3 32.1327 21.1 31.9687C27.42 29.795 32 23.6433 32 16.4047C32 7.3411 24.84 0 16 0Z"
+                        fill="currentColor" />
+                </svg>
+                github.com/gssrobotics/
+            </a>
+            <a href="https://youtube.com/@gssrobotics/">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 4C32 4 32 4 32 16C32 28 32 28 16 28C0 28 0 28 0 16C0 4 0 4 16 4ZM16 6C11.9632 6 9.06298 6.00077 6.91602 6.17969C4.71812 6.36285 3.71587 6.71212 3.19922 7.09961C2.80484 7.39552 2.44322 7.90635 2.22852 9.35547C2.00533 10.862 2 12.9353 2 16C2 19.0647 2.00533 21.138 2.22852 22.6445C2.44322 24.0937 2.80484 24.6045 3.19922 24.9004C3.71587 25.2879 4.71812 25.6372 6.91602 25.8203C9.06298 25.9992 11.9632 26 16 26C20.0368 26 22.937 25.9992 25.084 25.8203C27.2819 25.6372 28.2841 25.2879 28.8008 24.9004C29.1952 24.6045 29.5568 24.0937 29.7715 22.6445C29.9947 21.138 30 19.0647 30 16C30 12.9353 29.9947 10.862 29.7715 9.35547C29.5568 7.90635 29.1952 7.39552 28.8008 7.09961C28.2841 6.71212 27.2819 6.36285 25.084 6.17969C22.937 6.00077 20.0368 6 16 6ZM12.0195 12.2539C12.1952 10.9742 13.55 10.192 14.7461 10.6797L15 10.8047L21 14.2676C22.3333 15.0374 22.3333 16.9626 21 17.7324L15 21.1953C13.7501 21.9169 12.2078 21.1173 12.0195 19.7461L12 19.4648V12.5352L12.0195 12.2539ZM20 16L14 12.5352V19.4648L20 16Z"
+                        fill="currentColor" />
+                </svg>
+                youtube.com/@gssrobotics/
+            </a>
+        </div>
     </footer>
     <script src="script.js" defer></script>
 </body>
