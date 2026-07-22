@@ -310,6 +310,17 @@ button.secondary {
     color: var(--yellow-0);
 }
 
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.action-buttons > button {
+    width: 160px;
+    height: 48px;
+}
+
 /* For devices that support hover */
 
 @media (hover: hover) {

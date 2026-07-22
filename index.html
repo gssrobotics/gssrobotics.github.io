@@ -2,7 +2,6 @@
 title: Home
 description: Join 5+ nerdy teenagers who make barely functioning robots in the area’s worst FTC robotics team.
 image: /assets/pictures/2026/group-photo.webp
-extra_css: index.css
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +10,12 @@ extra_css: index.css
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% include head.html %}
     {% seo %}
+
+    {% include head.html %}
+
+    <link rel="stylesheet" href="{{ '/index.css' | relative_url }}">
+
     {% include analytics.html %}
 </head>
 

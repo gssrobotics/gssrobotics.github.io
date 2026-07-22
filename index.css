@@ -53,14 +53,3 @@
     bottom: -96px;
     width: 43%;
 }
-
-.action-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-
-.action-buttons > button {
-    width: 160px;
-    height: 48px;
-}
