@@ -101,6 +101,8 @@ header {
 #header-title {
     font-size: 1.8rem;
     font-weight: 400;
+    font-family: 'Anta', 'JetBrains Mono', 'Roboto', sans-serif;
+    color: var(--yellow-0);
 }
 
 /* Nav */

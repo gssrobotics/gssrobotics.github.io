@@ -32,12 +32,13 @@
     margin: -8px 0;
 }
 
-#hero-top {
+#hero-top, #hero-bottom {
+    font-family: 'Anta', 'JetBrains Mono', 'Roboto', sans-serif;
+    color: var(--yellow-0);
     font-size: 1.5rem;
 }
 
 #hero-bottom {
-    font-size: 1.5rem;
     float: right;
 }
 
