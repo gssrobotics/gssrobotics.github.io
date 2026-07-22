@@ -91,14 +91,14 @@ header {
     height: 72px;
 }
 
-#title-text {
+#header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4px;
 }
 
-#title-text > h1 {
+#header-title {
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -206,72 +206,7 @@ footer {
     transition: 0.2s ease-out;
 }
 
-/* Hero */
-#hero {
-    width: 100vw;
-    height: 100vh;
-    background: var(--background-1);
-    padding: 96px 128px;
-    overflow: hidden;
-    position: relative;
-}
-
-#hero-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    justify-content: center;
-    width: 60%;
-}
-
-#hero-title {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-#hero-title > h1, h2, h3 {
-    margin: 0;
-}
-
-#hero-title > h1 {
-    font-size: 4.5rem;
-    margin: -8px 0;
-}
-
-#hero-title > h2 {
-    font-size: 1.5rem;
-}
-
-#hero-title > h3 {
-    font-size: 1.5rem;
-    float: right;
-}
-
-#hero-content > p {
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 1.5;
-}
-
-#hero-image {
-    position: absolute;
-    right: 0;
-    bottom: -96px;
-    width: 43%;
-}
-
-.action-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-
-.action-buttons > button {
-    width: 160px;
-    height: 48px;
-}
+/* Hero styles in index.css */
 
 /* Content */
 
