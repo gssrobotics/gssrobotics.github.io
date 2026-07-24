@@ -83,17 +83,18 @@
 @media (max-width: 768px) {
     #hero {
         height: 100vh;
-        padding: 96px 24px 0;
+        padding: 96px 24px 192px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     #hero-content {
-        height: 100%;
         gap: 16px;
         width: 100%;
         max-width: 360px;
+        height: auto;
     }
 
     #hero-title {
@@ -123,6 +124,7 @@
         position: absolute;
         right: 0;
         bottom: -70px;
-        width: 480px;
+        height: 60%;
+        width: auto;
     }
 }
