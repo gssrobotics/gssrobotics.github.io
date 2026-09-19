@@ -197,12 +197,11 @@ main {
 
 /* Timeline */
 
-.content.timeline {
-    flex-direction: column;
+.content-block.timeline {
+    gap: 0px;
 }
 
-.timeline-content {
-    display: flex;
+.content.timeline {
     flex-direction: column;
 }
 
@@ -226,15 +225,30 @@ main {
     font-size: 1.5rem;
 }
 
-.timeline-text {
-    margin: -4px 0 -4px 19px;
-    padding: 32px 0px 32px 19px;
+.timeline-content {
+    margin: -20px 0 -4px 19px;
+    padding: 24px 0 24px 19px;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.timeline-text.solid {
+.timeline-content p {
+    margin: 0;
+}
+
+.timeline-content.solid {
     border-left: 2px solid var(--yellow-0);
 }
 
+.timeline-content.dotted {
+    border-left: 2px dotted var(--yellow-0);
+}
+
 .timeline-image {
-    margin: 0;
+    width: 100%;
+    max-width: none;
+    max-height: 320px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
 }

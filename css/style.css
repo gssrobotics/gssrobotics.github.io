@@ -359,11 +359,6 @@ footer {
 
 .content.timeline {
     display: flex;
-    flex-direction: row;
-}
-
-.timeline-content {
-    display: flex;
     flex-direction: column;
 }
 
@@ -417,25 +412,34 @@ footer {
     font-size: 1rem;
 }
 
-.timeline-text {
-    margin: -4px 0 -4px 23px;
-    padding: 48px 0px 48px 23px;
-    padding-right: none;
+.timeline-content {
+    margin: -20px 0 -4px 23px;
+    padding-left: 23px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 48px;
 }
 
-.timeline-text.solid {
+.timeline-content p {
+    margin: 48px 0;
+}
+
+.timeline-content.solid {
     border-left: 2px solid var(--yellow-0);
 }
 
-.timeline-text.dotted {
+.timeline-content.dotted {
     border-left: 2px dotted var(--yellow-0);
 }
 
 .timeline-image {
-    margin: 16px 0;
+    max-width: 33%;
+    max-height: 320px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
 }
 
 /* Buttons */
