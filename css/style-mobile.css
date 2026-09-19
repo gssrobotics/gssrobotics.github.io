@@ -194,3 +194,47 @@ main {
 .card-content ul {
     font-size: 1rem;
 }
+
+/* Timeline */
+
+.content.timeline {
+    flex-direction: column;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 48px;
+}
+
+.timeline-header .number {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.75rem;
+    margin: 4px 0;
+}
+
+.timeline-title .title {
+    font-size: 1.5rem;
+}
+
+.timeline-text {
+    margin: -4px 0 -4px 19px;
+    padding: 32px 0px 32px 19px;
+}
+
+.timeline-text.solid {
+    border-left: 2px solid var(--yellow-0);
+}
+
+.timeline-image {
+    margin: 0;
+}
